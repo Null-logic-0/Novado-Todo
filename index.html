@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Luka Tchelidze" />
+    <link rel="icon" href="./icons/short-Logo.svg" />
+    <script src="https://kit.fontawesome.com/2d3e948390.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@100..900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <title>Novado</title>
+</head>
+
+<body>
+
+    <main>
+
+        <section class="header-logo">
+            <img src="./icons/Logo.svg" alt="Logo" class="header-logo__img" />
+        </section>
+
+        <section class="input-section">
+            <input type="text" class="input-section__txt" placeholder="ცხოვრების რა ნაწილის დაგეგმვა გსურს?" />
+            <button class="input-section__btn">
+                დამატება <img src="./icons/add-btn.svg" alt="plus-icon" />
+            </button>
+        </section>
+
+        <section class="task-section">
+
+            <div class="task-section__numbers">
+                <div class="task-section__header">
+                    <p class="task-section__txt task-section--blue">დავალებები</p>
+                    <div class="task-section__count" id="create">0</div>
+                </div>
+                <div class="task-section__header">
+                    <p class="task-section__txt  task-section--purple">დასრულებული</p>
+                    <div class="task-section__count" id="done">0</div>
+                </div>
+            </div>
+
+            <div class="task-section__wrapper">
+
+                <ul class="task-section__tasklist">
+                    
+                </ul>
+
+                <div class="task-section__no-tasks">
+                    <img src="./icons/note.svg" alt="note-icon" />
+                    <div>
+                        <p class="task-section__message">დავალებები ჯერ არ გაქვთ</p>
+                        <p class="task-section__message">
+                            შექმენით დავალებები და დაიწყეთ თქვენი ცხოვრების დაორგანიზება
+                            ჩვენთან ერთად
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="./script/index.js"></script>
+
+</body>
+
+</html>

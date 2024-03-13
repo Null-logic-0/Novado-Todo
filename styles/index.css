@@ -1,0 +1,238 @@
+body {
+    background-color: #1a1a1a;
+    font-family: "Noto Sans Georgian", sans-serif;
+
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header-logo {
+    min-height: 200px;
+    display: flex;
+    padding: 20px;
+    background: rgb(13, 13, 13);
+    width: 100%;
+    justify-content: center;
+
+}
+
+.header-logo__img {
+    max-width: 183px;
+    width: 100%;
+}
+
+.input-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 0 20px;
+    position: relative;
+    top: -30px;
+}
+
+.input-section__txt {
+    max-width: 609px;
+    width: 100%;
+    padding: 16px;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.2s;
+    background-color: rgb(38, 38, 38);
+    border: 1px solid rgb(13, 13, 13);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+
+}
+
+.input-section__txt:focus {
+    border: 2px solid #fff;
+}
+
+.input-section__txt::placeholder {
+    color: #808080;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+.input-section__btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #1e6f9f;
+    color: #fff;
+    font-weight: 600;
+    padding: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+
+}
+
+.input-section__btn:hover {
+    background-color: #278bc5;
+}
+
+.input-section__btn:active {
+    background-color: #1f6690;
+}
+
+.task-section {
+    max-width: 736px;
+    width: 100%;
+    margin-top: 60px;
+}
+
+
+.task-section__numbers {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.task-section__header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.task-section__txt {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.task-section--blue {
+    color: #4EA8DE;
+}
+
+.task-section--purple {
+    color: #8284FA;
+}
+
+.task-section__count {
+    border-radius: 999px;
+    background: rgb(51, 51, 51);
+    width: 25px;
+    height: 19px;
+    padding: 2px 8px;
+    color: rgb(217, 217, 217);
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 15px;
+}
+
+.task-section__wrapper {
+    width: 100%;
+    display: flex;
+    min-height: 266px;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+    border-top: 1px solid #808080;
+    border-radius: 8px;
+    padding: 0 15px;
+    transition: all 0.2s;
+   
+}
+
+.task-section__tasklist:has(li) {
+    border-top: 1px solid transparent;
+}
+
+.task-section__no-tasks {
+    min-height: 266px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.task-section__message {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.4;
+    text-align: center;
+    color: rgb(128, 128, 128);
+    max-width: 678px;
+    width: 100%;
+}
+
+
+
+.task-section__tasklist {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.task-section__tasklist:has(li)+div {
+    display: none;
+}
+
+.task-section__list {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 56px;
+    gap: 12px;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.06);
+    border: solid 1px #333;
+    background-color: #262626;
+}
+
+.task-section__input-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #fff;
+    font-size: 14px;
+    transition: all 0.2s;
+}
+
+.task-section__btn {
+    width: 19.3px;
+    height: 19.3px;
+    border-radius: 50%;
+    border: 2px solid #4ea8de;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.task-section__btn:checked {
+    appearance: auto;
+    clip-path: circle(50% at 50% 50%);
+    background-color: #5e60ce;
+    accent-color: #5e60ce;
+}
+
+.task-section__btn:checked+p {
+    text-decoration: line-through;
+    color: #808080;
+}
+
+.task-section__delete {
+    color: #808080;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.2s;
+}
+
+.task-section__delete:hover {
+    background: rgb(94, 96, 206);
+}
