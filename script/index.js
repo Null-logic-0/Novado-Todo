@@ -20,6 +20,7 @@ function addTask() {
         </li>
         `;
         create.innerHTML = toDoCount;
+        taskInput.value = '';
         updateCheckedCount();
     }
 }
