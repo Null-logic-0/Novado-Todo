@@ -234,5 +234,5 @@ main {
 }
 
 .task-section__delete:hover {
-    background: rgb(94, 96, 206);
+    color: rgb(94, 96, 206);
 }

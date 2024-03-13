@@ -25,6 +25,7 @@ function addTask() {
     }
 }
 
+
 function updateCheckedCount() {
     const checkboxes = document.querySelectorAll('.task-section__btn');
     checkedCount = Array.from(checkboxes).filter(checkbox => checkbox.checked).length;
